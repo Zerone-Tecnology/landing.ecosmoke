@@ -23,15 +23,42 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">asdasd</div>
-                        <div class="col-md-6">asd</div>
+                <div class="section section-one">
+                    <div class="section-content bg-dark-blue">
+                        <div class="half-block">
+                            <div class="content content-left">
+                                <span class="content-pre-title">ЧТО ТАКОЕ</span>
+                                <h1 class="section-title">ЭЛЕКТРОННЫЕ СИГАРЕТЫ</h1>
+                                <p class="content-info-text">
+                                    Хотите бросить курить?</br>
+                                    Или перейти на безопасную альтернативу?</br>
+                                    Тогда вам сюда. Мы помоможем и объясним, просто и доступно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-empty"></div>
                     </div>
                 </div>
 
             </div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">
+
+                <div class="section section-one">
+                    <div class="section-content">
+                        <div class="flex-empty bg-dark"></div>
+                        <div class="half-block">
+                            <div class="content content-right">
+                                <p class="section-title-secondary">Отличие классических сигарет от электронных</p>
+                                <p>
+                                    Про сигареты вы итак всё знаете. А что с электронными? В электронных сигаретах используются жидкости, а не табак. Эти жидкости содержат пропиленгликоль, глицерин, пищевые ароматизаторы и никотин (можно вообще без него, да-да!). Можно выбирать жидкости с разной крепостью никотина – слабые или сильные, вы можете выбрать себе комфортную для вас. И еще, никотин может быть обычным или солевым. Солевым вы быстрее насыщаетесь, значит, парите реже и меньше. Как их отличить от обычных? На них есть надпись SALT.
+                                </p>
+                                <p>Узнать больше вы можете в нашем интернет магазине: ecosmoke.kz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
@@ -48,7 +75,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
     <!-- Swiper JS -->
-    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/swiper/swiper.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -61,6 +88,7 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            slidesPerView: 'auto' 
         });
 
 
