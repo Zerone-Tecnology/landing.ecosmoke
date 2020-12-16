@@ -36,7 +36,6 @@ body {
 	-webkit-align-items: center;
 	align-items: center;
 	height: 100vh !important;
-	margin: 0 !important;
 }
 nav {
 	width: 100%;
@@ -65,13 +64,13 @@ nav.open {
 		height: 2px;
 		top: 30px;
 		right: 15px;
-		background-color: black;
+		background-color: rgb(255, 255, 255);
 		&:before {
 			transition-duration: 0.25s;
 			position: absolute;
 			width: 30px;
 			height: 2px;
-			background-color: black;
+			background-color: rgb(255, 255, 255);
 			content: "";
 			top: -7px;
 			left: 0;
@@ -81,7 +80,7 @@ nav.open {
 			position: absolute;
 			width: 30px;
 			height: 2px;
-			background-color: black;
+			background-color: rgb(255, 255, 255);
 			content: "";
 			top: 7px;
 			left: 0;
