@@ -243,4 +243,9 @@ a.btn {
   text-align: center;
   background-position: center;
 }
+
+.s2 .btn-next img, .s3 .btn-next img, .s4 .btn-next img {
+  fill: #000;
+  background-color: #000;
+}
 /*# sourceMappingURL=styles.css.map */
