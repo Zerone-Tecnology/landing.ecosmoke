@@ -99,19 +99,19 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
     <!-- Swiper JS -->
-    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/swiper/swiper.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             slidesPerView: 1,
-            spaceBetween: 30,
             mousewheel: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            slidesPerView: 'auto' 
         });
 
 

@@ -52,7 +52,7 @@ nav {
 
 nav.open {
   height: 100vh;
-  background: #15121d;
+  background: linear-gradient(295.18deg, rgba(226, 0, 15, 0.2) 0%, rgba(226, 0, 15, 0.1) 36.36%, rgba(0, 0, 0, 0) 71.23%);
 }
 
 .navToggle {
@@ -79,6 +79,7 @@ nav.open {
 .navToggle .icon:before {
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
+
   position: absolute;
   width: 30px;
   height: 2px;
@@ -87,7 +88,6 @@ nav.open {
   top: -7px;
   left: 0;
 }
-
 .navToggle .icon:after {
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
@@ -128,6 +128,7 @@ nav.open {
 .navToggle.open .icon:before {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+
   top: 0;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -141,5 +142,3 @@ nav.open {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   background-color: white;
-}
-/*# sourceMappingURL=style.css.map */
