@@ -6,13 +6,8 @@ body nav {
 }
 body .logo_1 {
   position: absolute;
-  left: 10%;
+  left: 25px;
   top: 15px;
-}
-body .logo_2 {
-  position: absolute;
-  left: 50%;
-  margin-left: -20px;
 }
 
 a.btn {
@@ -46,6 +41,9 @@ a.btn {
   text-align: left;
   backgroud-color: #E2000F;
 }
+.b-left .p-content {
+  float: right;
+}
 .b-right {
   text-align: left;
 }
@@ -64,7 +62,7 @@ a.btn {
 
 .swiper-slide .s-title {
   position: absolute;
-  top: 10%;
+  top: 65px;
   margin: auto 0;
   font-size: 18px;
   letter-spacing: 2px;
@@ -89,6 +87,12 @@ a.btn {
   background-image: url("../img/sl_head.jpg");
   background-size: cover;
 }
+.swiper-slide.header .logo_2 {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -20px;
+}
 .swiper-slide.header h1 {
   font-size: 80px;
   font-weight: 700;
@@ -108,9 +112,6 @@ a.btn {
 .swiper-slide.s1 {
   background-color: #191B1F;
   color: #ffffff;
-  background-image: url("../img/sl_1_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: 100% 0;
 }
 .swiper-slide.s1 h2 {
   font: 40px;
@@ -118,6 +119,8 @@ a.btn {
 }
 .swiper-slide.s1 .b-right {
   font-size: 16px;
+  background-image: url("../img/sl_1_bg.jpg");
+  background-repeat: no-repeat;
 }
 .swiper-slide.s1 .b-right p {
   color: #9FB4B5;
@@ -126,7 +129,12 @@ a.btn {
   color: #ffffff;
 }
 .swiper-slide.s1 .b-left img {
-  width: 90%;
+  max-width: 550px;
+  margin: 0 auto;
+  display: block;
+}
+.swiper-slide .p-content {
+  max-width: 560px;
 }
 .swiper-slide .p-content p {
   font-size: 16px;
