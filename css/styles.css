@@ -1,15 +1,23 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Bold.woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
 body nav {
   background-color: transparent;
-}
-
-body .logo_1 {
-  position: absolute;
-  left: 25px;
-  top: 15px;
 }
 
 a.btn {
@@ -42,6 +50,19 @@ a.btn {
   background-color: #af000c;
 }
 
+.btn-next {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  margin-left: -20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/arr_down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .b-left {
   text-align: left;
   backgroud-color: #E2000F;
@@ -55,10 +76,16 @@ a.btn {
   text-align: left;
 }
 
+.logo_1 {
+  position: absolute;
+  left: 5%;
+  top: 15px;
+}
+
 .social-wrap {
   position: fixed;
   top: 40%;
-  left: 15px;
+  left: 5%;
   z-index: 7;
 }
 
@@ -70,13 +97,16 @@ a.btn {
 
 .swiper-slide .s-title {
   position: absolute;
+  font-family: 'Gotham Pro';
   top: 65px;
   margin: auto 0;
   font-size: 18px;
   letter-spacing: 2px;
+  z-index: 9;
 }
 
 .swiper-slide h4 {
+  font-family: 'Gotham Pro';
   font-size: 40px;
   line-height: 46px;
   font-weight: 700;
@@ -100,6 +130,17 @@ a.btn {
   background-size: cover;
 }
 
+.swiper-slide.header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: linear-gradient(285.18deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 31.65%, rgba(1, 81, 238, 0.3) 100%);
+}
+
 .swiper-slide.header .logo_2 {
   position: absolute;
   top: 15px;
@@ -108,6 +149,7 @@ a.btn {
 }
 
 .swiper-slide.header h1 {
+  font-family: 'Gotham Pro', sans-serif;
   font-size: 80px;
   font-weight: 700;
   line-height: 75px;
@@ -126,14 +168,20 @@ a.btn {
   color: #9FB4B5;
 }
 
+.swiper-slide.header .btn {
+  margin-top: 45px;
+}
+
 .swiper-slide.s1 {
   background-color: #191B1F;
   color: #ffffff;
 }
 
 .swiper-slide.s1 h2 {
+  font-family: 'Gotham Pro';
   font: 40px;
   line-height: 38px;
+  font-weight: 700;
 }
 
 .swiper-slide.s1 .b-right {
@@ -152,12 +200,13 @@ a.btn {
 
 .swiper-slide.s1 .b-left img {
   max-width: 550px;
-  margin: 0 auto;
+  margin: 25% auto 0;
   display: block;
 }
 
 .swiper-slide .p-content {
   max-width: 560px;
+  margin-top: 25%;
 }
 
 .swiper-slide .p-content p {
@@ -186,5 +235,12 @@ a.btn {
 .swiper-slide .p-image {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(249, 241, 240, 0.5)), to(#F9F1F0));
   background: linear-gradient(180deg, rgba(249, 241, 240, 0.5) 0%, #F9F1F0 100%);
+}
+
+.swiper-slide .p-image .product_wrap {
+  background-image: url("../img/product_bg.svg");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
 }
 /*# sourceMappingURL=styles.css.map */
