@@ -1,0 +1,62 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+body nav {
+  background-color: transparent;
+}
+
+a.btn {
+  color: #fff;
+}
+
+.btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 240px;
+  padding: 15px;
+  text-align: left;
+  background-image: url("../img/arr.png");
+  background-repeat: no-repeat;
+  background-position: 90% 45%;
+}
+.btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-red {
+  background-color: #E2000F;
+  border-radius: 6px;
+}
+.btn-red:hover {
+  background-color: #af000c;
+}
+
+.b-left {
+  text-align: left;
+  backgroud-color: #E2000F;
+}
+.b-right {
+  text-align: right;
+}
+
+.swiper-slide.header {
+  background-color: #191B1F;
+  color: #ffffff;
+  background-image: url("../img/sl_head.jpg");
+  background-size: cover;
+}
+.swiper-slide.header h2 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+.swiper-slide.header span {
+  font-size: 18px;
+  color: #9FB4B5;
+}
+.swiper-slide.header p {
+  font-size: 16px;
+  color: #9FB4B5;
+}
