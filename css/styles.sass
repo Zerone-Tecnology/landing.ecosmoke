@@ -146,6 +146,7 @@ a.btn
   .p-content
     max-width: 560px
     margin-top: 25%
+    margin-left: 120px
     p
       font-size: 16px
       line-height: 24px
@@ -163,8 +164,30 @@ a.btn
       display: inline-block
   .p-image
     background: linear-gradient(180deg, rgba(249, 241, 240, 0.5) 0%, #F9F1F0 100%)
+    .product_img
+      max-height: 650px
     .product_wrap
       background-image: url('../img/product_bg.svg')
       background-repeat: no-repeat
       text-align: center
       background-position: center
+      .btn-add-cart
+        position: absolute
+        top: 35%
+        left: 18% 
+      .btn-more-info
+        position: absolute
+        top: 45%
+        left: 77%
+  .b-left.p-image
+    .btn-add-cart
+      left: 73%
+    .btn-more-info
+      left: 19%
+  .b-left .p-content
+    margin-left: 0
+    margin-right: 120px
+.s2, .s3, .s4
+  .btn-next img
+    fill: #000
+    background-color: #000
