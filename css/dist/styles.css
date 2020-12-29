@@ -68,9 +68,134 @@ a.btn {
   background-repeat: no-repeat;
 }
 
+.menu-text {
+  transition-duration: 1s;
+  position: absolute;
+  right: 84px;
+  top: 30px;
+  font-size: 16px;
+  color: #fff;
+  z-index: 9999;
+}
+
+nav .logo {
+  z-index: 999999;
+}
+nav .openlogo {
+  display: none;
+}
+nav .openGradient {
+  display: none;
+}
+nav .menu-wrap {
+  display: none;
+}
+nav .menu-wrap ul li {
+  list-style-type: none;
+  font-family: Gotham Pro;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: right;
+  margin-bottom: 0.7em;
+  margin-right: 130px;
+  position: relative;
+  opacity: 0.5;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 999;
+}
+nav .menu-wrap ul li:last-child {
+  margin-bottom: 0;
+}
+nav .menu-wrap ul li.active {
+  opacity: 1;
+}
+nav .menu-wrap ul li::before {
+  content: "";
+  position: absolute;
+  right: -148px;
+  top: 14px;
+  height: 2px;
+  width: 20px;
+  background: #fff;
+  opacity: 0.5;
+}
+nav .menu-wrap ul li::after {
+  content: "";
+  position: absolute;
+  right: -172px;
+  top: 11px;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  opacity: 0.5;
+}
+nav.open .openlogo {
+  display: block;
+  position: absolute;
+  background-image: url(../img/logoecosmoke_logo.svg);
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: calc(100% - 680px) calc(100% + 440px);
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.1;
+}
+nav.open .openGradient-blue {
+  width: 100%;
+  z-index: 99;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: block;
+  background: #0151ee;
+  background: linear-gradient(151deg, #0151ee 0%, #07060b 40%);
+  opacity: 0.1;
+}
+nav.open .openGradient {
+  width: 100%;
+  z-index: 99;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: block;
+  background: linear-gradient(295.18deg, rgba(226, 0, 15, 0.1) 0%, rgba(226, 0, 15, 0.1) 36.36%, rgba(0, 0, 0, 0) 71.23%);
+}
+nav.open .navToggle {
+  z-index: 9999;
+}
+nav.open .menu-wrap {
+  display: block;
+}
+nav.open .menu-wrap ul {
+  z-index: 99999;
+}
+nav.open .menu-wrap ul li {
+  cursor: pointer;
+}
+nav.open .menu-wrap ul li::after {
+  opacity: 0.5;
+}
+nav.open .menu-wrap ul li.active::before {
+  opacity: 1;
+}
+nav.open .menu-wrap ul li.active::after {
+  opacity: 1;
+}
+
 .b-left {
   text-align: left;
-  backgroud-color: #E2000F;
 }
 .b-left .p-content {
   float: right;
@@ -382,7 +507,7 @@ a.btn {
 }
 .swiper-slide.s1 h2 {
   font-family: "Gotham Pro";
-  font: 40px;
+  font-size: 40px;
   line-height: 38px;
   font-weight: 700;
 }
@@ -399,7 +524,7 @@ a.btn {
 }
 .swiper-slide.s1 .b-left img {
   max-height: 650px;
-  margin: 10% auto 0 120px;
+  margin: 120px calc(34% - 120px) 0 calc(34% - 120px);
   display: block;
 }
 .swiper-slide.s3 .p-content .desc-list {

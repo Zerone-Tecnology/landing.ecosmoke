@@ -45,3 +45,19 @@ $(".btn-next").click(function(){
 $(".btn-more-colse-modal").click(function() {
     $(".on-front-desc.active").removeClass("active");
 });
+
+$(".navToggle").click(function(){
+    console.log($(this)[0]);
+    if ($(this).hasClass('open')) {
+        $(".menu-text").html("ЗАКРЫТЬ");
+    } else {
+        $(".menu-text").html("МЕНЮ");
+    }
+});
+
+$(".menulist>li").click(function(){
+    $("li.active").removeClass("active");
+    $(this).addClass("active");
+    $(".navToggle.open").click();
+    $(".swiper-pagination-bullet")[$(this).index()].click();
+});

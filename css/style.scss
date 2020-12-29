@@ -60,7 +60,7 @@ nav.open {
 	.icon {
 		transition-duration: 0.25s;
 		position: absolute;
-		width: 30px;
+		width: 35px;
 		height: 2px;
 		top: 30px;
 		right: 15px;
@@ -68,32 +68,32 @@ nav.open {
 		&:before {
 			transition-duration: 0.25s;
 			position: absolute;
-			width: 30px;
+			width: 25px;
 			height: 2px;
 			background-color: rgb(255, 255, 255);
 			content: "";
-			top: -7px;
-			left: 0;
+			top: -11px;
+			right: 0;
 		}
 		&:after {
 			transition-duration: 0.25s;
 			position: absolute;
-			width: 30px;
+			width: 15px;
 			height: 2px;
 			background-color: rgb(255, 255, 255);
 			content: "";
-			top: 7px;
-			left: 0;
+			top: 11px;
+			right: 0;
 		}
 	}
 	&:hover {
 		cursor: pointer;
 		.icon {
 			&:before {
-				top: -10px;
+				top: -13px;
 			}
 			&:after {
-				top: 10px;
+				top: 13px;
 			}
 		}
 	}
@@ -102,12 +102,19 @@ nav.open {
 	transition-duration: 1s;
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
+	.menu-title {
+		transition-delay: 0s;
+		transition-duration: 0.5s;
+		opacity: 0;
+	}
 	.icon {
 		transition-duration: 0.5s;
 		background-color: transparent;
+		width: 30px;
 		&:before {
 			transition-duration: 0.5s;
 			top: 0;
+			width: 30px;
 			transform: rotate(45deg);
 			-webkit-transform: rotate(45deg);
 			background-color: rgb(255, 255, 255);
@@ -115,6 +122,7 @@ nav.open {
 		&:after {
 			transition-duration: 0.5s;
 			top: 0;
+			width: 30px;
 			transform: rotate(-45deg);
 			-webkit-transform: rotate(-45deg);
 			background-color: rgb(255, 255, 255);
