@@ -196,7 +196,7 @@ nav.open .openGradient {
 }
 
 nav.open .navToggle {
-  z-index: 9999;
+  z-index: 99999999;
 }
 
 nav.open .menu-wrap {
