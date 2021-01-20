@@ -1,0 +1,61 @@
+@media screen and (max-width: 480px)
+  .swiper-slide.header h1
+    font-size: 42px
+    line-height: 44px
+    margin-bottom: 15px
+  nav.open 
+    .menu-wrap
+      z-index: 9
+    .openlogo
+      background-size: cover
+      background-position: inherit
+  .logo_1
+    top: 35%
+  .social-wrap
+    top: 80%
+    left: 0
+    text-align: center
+    width: 100%
+    display: none
+    a
+      display: inline-block
+  .swiper-container,
+  .swiper-wrapper,
+  .swiper-slide
+    height: auto!important
+  .swiper-wrapper
+    display: block
+  .swiper-container-vertical>.swiper-pagination-bullets
+    display: none
+  .swiper-slide
+    &.header
+      background-position: 70% 0
+      height: 100vh!important
+      .btn-next
+        display: block
+    &.s1 
+      .b-left img
+        width: 100%
+    .p-content
+      margin-left: 0
+    .btn-next
+      display: none
+    &.s1,
+    &.s2,
+    &.s3,
+    &.s4,
+    &.s5,
+    &.s6,
+    &.s7
+      padding-bottom: 55px
+    .s-title
+      top: 15px
+    h4
+      font-size: 28px
+      line-height: 28px
+    .p-image .product_img
+      max-width: 200px
+
+    &.footer
+      .b-right
+        height: 280px
