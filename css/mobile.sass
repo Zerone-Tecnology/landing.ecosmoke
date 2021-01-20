@@ -1,8 +1,4 @@
 @media screen and (max-width: 480px)
-  .swiper-slide.header h1
-    font-size: 42px
-    line-height: 44px
-    margin-bottom: 15px
   nav.open 
     .menu-wrap
       z-index: 9
@@ -33,9 +29,17 @@
       height: 100vh!important
       .btn-next
         display: block
+      h1
+        font-size: 34px
+        line-height: 44px
+        margin-bottom: 15px
     &.s1 
       .b-left img
         width: 100%
+        margin: auto
+      h2
+        font-size: 22px
+        line-height: 24px
     .p-content
       margin-left: 0
     .btn-next
@@ -53,9 +57,22 @@
     h4
       font-size: 28px
       line-height: 28px
-    .p-image .product_img
-      max-width: 200px
-
+    .p-image 
+      .product_img
+        max-width: 200px
+        max-height: 320px
+      .product_wrap 
+        background-size: 70%
+        .btn-wrap-container .btn-add-cart
+          top: 0
+          left: -75px
+        .btn-wrap-container .btn-more-info
+          top: 0
+          left: 125px
+      margin: 0
     &.footer
       .b-right
         height: 280px
+.on-front-desc.v1
+  top: 0
+  left: 0
