@@ -52,53 +52,76 @@ $(".menulist>li").click(function () {
   $(this).addClass("active");
   $(".navToggle.open").click();
   $(".swiper-pagination-bullet")[$(this).index()].click();
-}); // breakpoint where swiper will be destroyed
-// and switches to a dual-column layout
+}); // // breakpoint where swiper will be destroyed
+// // and switches to a dual-column layout
+// const breakpoint = window.matchMedia( '(min-width:480px)' );
+// // keep track of swiper instances to destroy later
+// let mySwiper;
+// //////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////
+// const breakpointChecker = function() {
+//    // if larger viewport and multi-row layout needed
+//    if ( breakpoint.matches === true ) {
+//         // fire small viewport version of swiper
+//         // return enableSwiper();  
+//    // else if a small viewport and single column layout needed
+//    } else if ( breakpoint.matches === false ) {
+//       // clean up old instances and inline styles when available
+//       if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+//       // or/and do nothing
+//       return;
+//    }
+// };
+// //////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////
+// const enableSwiper = function() {
+//    mySwiper = new Swiper('.swiper-container', {
+//         direction: 'vertical',
+//         slidesPerView: 1,
+//         mousewheel: true,
+//         pagination: {
+//             el: '.swiper-pagination',
+//             clickable: true,
+//         },
+//         slidesPerView: 'auto',
+//         breakpoints: {
+//             480: {
+//                 noSwiping: false,
+//             }
+//         }
+//     });
+// };
+// //////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////
+// // keep an eye on viewport size changes
+// breakpoint.addListener(breakpointChecker);
+// // kickstart
+// breakpointChecker();
+// mySwiper = new Swiper('.swiper-container', {
+//     direction: 'vertical',
+//     slidesPerView: 1,
+//     mousewheel: true,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     slidesPerView: 'auto',
+//     breakpoints: {
+//         480: {
+//             noSwiping: false,
+//         }
+//     }
+// });
 
-var breakpoint = window.matchMedia('(min-width:480px)'); // keep track of swiper instances to destroy later
-
-var mySwiper; //////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-
-var breakpointChecker = function breakpointChecker() {
-  // if larger viewport and multi-row layout needed
-  if (breakpoint.matches === true) {
-    // fire small viewport version of swiper
-    return enableSwiper(); // else if a small viewport and single column layout needed
-  } else if (breakpoint.matches === false) {
-    // clean up old instances and inline styles when available
-    if (mySwiper !== undefined) mySwiper.destroy(true, true); // or/and do nothing
-
-    return;
+var swiper = new Swiper('.swiper-container', _defineProperty({
+  direction: 'vertical',
+  slidesPerView: 1,
+  mousewheel: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
   }
-}; //////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-
-
-var enableSwiper = function enableSwiper() {
-  var _ref;
-
-  mySwiper = new Swiper('.swiper-container', (_ref = {
-    direction: 'vertical',
-    slidesPerView: 1,
-    mousewheel: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    }
-  }, _defineProperty(_ref, "slidesPerView", 'auto'), _defineProperty(_ref, "breakpoints", {
-    480: {
-      noSwiping: false
-    }
-  }), _ref));
-}; //////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-// keep an eye on viewport size changes
-
-
-breakpoint.addListener(breakpointChecker); // kickstart
-
-breakpointChecker();
+}, "slidesPerView", 'auto'));
