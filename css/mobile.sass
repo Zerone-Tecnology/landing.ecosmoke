@@ -7,6 +7,11 @@
       background-position: inherit
   .logo_1
     top: 35%
+  .btn
+    position: absolute
+    bottom: 10px
+    left: 15px
+    width: 220px
   .social-wrap
     top: 80%
     left: 0
@@ -18,16 +23,31 @@
   .swiper-container-vertical>.swiper-pagination-bullets
     display: none
   .swiper-slide
+    .on-front-desc
+      width: 90%
+      left: -160px
+      top: 0
+    .on-front-desc
+      &.modal_content
+        &.desc_arrow_left:after
+          content: none
+        .btn
+          position: relative
+          left: 0
     .b-left,
     .b-right
       height: 50%
     .p-content
       margin: 25px 0 0
+      height: 100%
+      overflow-y: scroll
+      p
+        margin-top: 5px
     .s-title
       top: 15px
     h4
-      font-size: 28px
-      line-height: 28px
+      font-size: 22px
+      line-height: 22px
     .p-image
       padding: 55px 0
       .product_img
@@ -35,14 +55,14 @@
         max-height: 320px
       .product_wrap 
         background-size: 70%
-        min-width: 400px
-        min-height: 400px
+        min-width: 300px
+        min-height: 300px
         .btn-wrap-container .btn-add-cart
           top: 0
-          left: -125px
+          left: -140px
         .btn-wrap-container .btn-more-info
           top: 0
-          left: 165px
+          left: 180px
     &.header
       background-position: 70% 0
       height: 100vh!important
@@ -71,6 +91,3 @@
     &.footer
       .b-right
         height: 280px
-  .on-front-desc.v1
-    top: 0
-    left: 0
