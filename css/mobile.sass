@@ -12,18 +12,37 @@
     left: 0
     text-align: center
     width: 100%
-    display: none
+    display: none //fix on main page
     a
       display: inline-block
-  .swiper-container,
-  .swiper-wrapper,
-  .swiper-slide
-    height: auto!important
-  .swiper-wrapper
-    display: block
   .swiper-container-vertical>.swiper-pagination-bullets
     display: none
   .swiper-slide
+    .b-left,
+    .b-right
+      height: 50%
+    .p-content
+      margin: 25px 0 0
+    .s-title
+      top: 15px
+    h4
+      font-size: 28px
+      line-height: 28px
+    .p-image
+      padding: 55px 0
+      .product_img
+        max-width: initial
+        max-height: 320px
+      .product_wrap 
+        background-size: 70%
+        min-width: 400px
+        min-height: 400px
+        .btn-wrap-container .btn-add-cart
+          top: 0
+          left: -125px
+        .btn-wrap-container .btn-more-info
+          top: 0
+          left: 165px
     &.header
       background-position: 70% 0
       height: 100vh!important
@@ -35,44 +54,23 @@
         margin-bottom: 15px
     &.s1 
       .b-left img
-        width: 100%
-        margin: auto
+        height: 80%
+        margin: 65px auto auto
       h2
         font-size: 22px
         line-height: 24px
-    .p-content
-      margin-left: 0
-    .btn-next
-      display: none
-    &.s1,
-    &.s2,
-    &.s3,
-    &.s4,
-    &.s5,
-    &.s6,
-    &.s7
-      padding-bottom: 55px
-    .s-title
-      top: 15px
-    h4
-      font-size: 28px
-      line-height: 28px
-    .p-image 
-      .product_img
-        max-width: 200px
-        max-height: 320px
-      .product_wrap 
-        background-size: 70%
-        .btn-wrap-container .btn-add-cart
-          top: 0
-          left: -75px
-        .btn-wrap-container .btn-more-info
-          top: 0
-          left: 125px
-      margin: 0
+    &.s6 
+      .p-content
+        margin: 0
+      .on-front
+        position: relative
+        &.on-front-right 
+          right: 0
+          .p-content
+            margin: 0
     &.footer
       .b-right
         height: 280px
-.on-front-desc.v1
-  top: 0
-  left: 0
+  .on-front-desc.v1
+    top: 0
+    left: 0
