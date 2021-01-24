@@ -157,6 +157,13 @@
     margin: 0;
     width: auto;
     max-width: inherit;
+    padding: 55px 15px 0;
+  }
+  .swiper-slide.s6 .p-content p {
+    padding-top: 15px;
+  }
+  .swiper-slide.s6 .p-content .btn {
+    margin-bottom: 0;
   }
   .swiper-slide.s6 .on-front {
     position: relative;
@@ -164,9 +171,11 @@
   .swiper-slide.s6 .on-front.on-front-right {
     right: 0;
     height: auto !important;
+    padding-bottom: 75px;
   }
   .swiper-slide.s6 .on-front.on-front-right .p-content {
     margin: 0;
+    padding-top: 15px;
   }
   .swiper-slide.s6 .on-front.on-front-left {
     height: auto !important;
