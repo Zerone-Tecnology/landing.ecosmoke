@@ -18,11 +18,16 @@
         border-bottom: 1px solid rgba(#000, 0.2)
         .menu-text
           color: #000
-        .navToggle .icon
-          background-color: #000000
-          &::before,
-          &::after
-            background-color: #000000            
+        .text-white
+          color: #000!important
+        .navToggle 
+          .icon
+            background-color: #000000
+            &::before,
+            &::after
+              background-color: #000000
+          &.open .icon
+            background-color: transparent
       &.open 
         .menu-wrap
           z-index: 9
@@ -49,7 +54,9 @@
   .swiper-container-vertical>.swiper-pagination-bullets
     display: none
   .swiper-slide
-    overflow: auto;
+    overflow: auto
+    &:not(.header):not(.s1)
+      margin-top: 50px
     .on-front-desc
       width: 90%
       left: -160px
@@ -116,15 +123,49 @@
     &.s6 
       .p-content
         margin: 0
+        width: auto
+        max-width: inherit
       .on-front
         position: relative
-        &.on-front-right 
+        &.on-front-right
           right: 0
+          height: auto!important
           .p-content
             margin: 0
+        &.on-front-left
+          height: auto!important
+      .product_wrap 
+        .product_img
+          max-height: 350px
+        .btn-wrap-container 
+          .btn-more-info-6
+            left: 125px
+          .btn-add-cart-6
+            left: -130px
+            top: 70px
+    &.s7
+      .product_wrap 
+        .product_img
+          max-width: initial
+          max-height: 320px
+        .btn-wrap-container 
+          .btn-more-info-7
+            left: 125px
+          .btn-add-cart-7
+            left: -130px
+            top: 70px
     &.footer
       .b-right
         height: 280px
+      .b-left 
+        padding: 0
+        .p-content
+          margin-left: 30px
+      .container-fluid.h-100
+        padding: 0
+      .row.h-100
+        height: auto!important
+        margin: 0
 
 @media screen and (max-width: 360px)
   .swiper-slide 
