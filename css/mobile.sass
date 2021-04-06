@@ -42,7 +42,7 @@
   .logo_1
     top: 35%
   .btn
-    margin-bottom: 55px
+    // margin-bottom: 55px
   .social-wrap
     top: 80%
     left: 0
@@ -56,12 +56,15 @@
   .swiper-slide
     overflow: auto
     &:not(.header):not(.s1)
-      margin-top: 50px
+      padding-top: 50px
+      .s-title
+        top: 65px
     .on-front-desc
       width: 90%
-      left: -160px
+      left: -110px
       top: 0
-    .on-front-desc
+      min-width: 320px
+      z-index: 9999
       &.modal_content
         &.desc_arrow_left:after
           content: none
@@ -70,8 +73,8 @@
           left: 0
     .p-content
       margin: 25px 0 0
-      height: 100%
-      // overflow-y: scroll
+      height: auto
+      margin-bottom: 100px
       p
         margin-top: 5px
     .s-title
@@ -88,12 +91,13 @@
         background-size: 70%
         min-width: 300px
         min-height: 300px
-        .btn-wrap-container .btn-add-cart
-          top: 0
-          left: -140px
-        .btn-wrap-container .btn-more-info
-          top: 0
-          left: 180px
+        .btn-wrap-container 
+          .btn-add-cart
+            top: 0
+            left: -140px
+          .btn-more-info
+            top: 0
+            left: 180px
     &:not(.header):not(.s1)
       .btn-next
         position: relative
@@ -111,10 +115,18 @@
         font-size: 34px
         line-height: 44px
         margin-bottom: 15px
+      span
+        margin-bottom: 5px
+      .p-content
+        p.desc
+          font-size: 14px
+          line-height: 16px
     &.s1 
       .b-left img
         height: 80%
         margin: 65px auto auto
+      .btn-next
+        display: none
       h2
         font-size: 22px
         line-height: 24px
@@ -185,12 +197,29 @@
       .product_wrap
         min-height: 200px
         background-size: 55%
-        .btn-wrap-container .btn-more-info
-          left: 135px
-          transform: scale(.8)
-        .btn-wrap-container .btn-add-cart
-          left: -95px
-          transform: scale(.6)
+        .btn-wrap-container 
+          .btn-more-info
+            left: 135px
+            transform: scale(.8)
+          .btn-add-cart
+            left: -95px
+            transform: scale(.6)
+          .btn-more-info-6
+              left: 135px
+              top: 15%
+              transform: scale(.8)
+          .btn-add-cart-6
+            left: -95px
+            top: 25%
+            transform: scale(.6)
+          .btn-more-info-6
+              left: 135px
+              top: 15%
+              transform: scale(.8)
+          .btn-add-cart-6
+            left: -95px
+            top: 25%
+            transform: scale(.6)
     &.header 
       h1
         font-size: 32px
@@ -198,3 +227,11 @@
       .logo_2
         width: 35px
         top: 0
+    &.s1
+      .s-title
+          top: 60px
+      .b-left
+        margin-top: 35px
+    &.footer
+      .p-content
+        margin-top: 35px

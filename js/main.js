@@ -28,7 +28,7 @@ $(".navToggle").click(function(){
     $("nav").toggleClass("open");
 });
 
-$(".btn-next").click(function(){
+$(".btn-next, .btn-next_act").click(function(){
     $(".swiper-pagination-bullet-active").next().click();
 });
 

@@ -53,9 +53,6 @@
   .logo_1 {
     top: 35%;
   }
-  .btn {
-    margin-bottom: 55px;
-  }
   .social-wrap {
     top: 80%;
     left: 0;
@@ -73,12 +70,17 @@
     overflow: auto;
   }
   .swiper-slide:not(.header):not(.s1) {
-    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .swiper-slide:not(.header):not(.s1) .s-title {
+    top: 65px;
   }
   .swiper-slide .on-front-desc {
     width: 90%;
-    left: -160px;
+    left: -110px;
     top: 0;
+    min-width: 320px;
+    z-index: 9999;
   }
   .swiper-slide .on-front-desc.modal_content.desc_arrow_left:after {
     content: none;
@@ -89,7 +91,8 @@
   }
   .swiper-slide .p-content {
     margin: 25px 0 0;
-    height: 100%;
+    height: auto;
+    margin-bottom: 100px;
   }
   .swiper-slide .p-content p {
     margin-top: 5px;
@@ -142,9 +145,19 @@
     line-height: 44px;
     margin-bottom: 15px;
   }
+  .swiper-slide.header span {
+    margin-bottom: 5px;
+  }
+  .swiper-slide.header .p-content p.desc {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .swiper-slide.s1 .b-left img {
     height: 80%;
     margin: 65px auto auto;
+  }
+  .swiper-slide.s1 .btn-next {
+    display: none;
   }
   .swiper-slide.s1 h2 {
     font-size: 22px;
@@ -240,6 +253,30 @@
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-more-info-6 {
+    left: 135px;
+    top: 15%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-add-cart-6 {
+    left: -95px;
+    top: 25%;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-more-info-6 {
+    left: 135px;
+    top: 15%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-add-cart-6 {
+    left: -95px;
+    top: 25%;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
   .swiper-slide.header h1 {
     font-size: 32px;
     line-height: 32px;
@@ -248,5 +285,13 @@
     width: 35px;
     top: 0;
   }
+  .swiper-slide.s1 .s-title {
+    top: 60px;
+  }
+  .swiper-slide.s1 .b-left {
+    margin-top: 35px;
+  }
+  .swiper-slide.footer .p-content {
+    margin-top: 35px;
+  }
 }
-/*# sourceMappingURL=mobile.css.map */

@@ -1,21 +1,58 @@
 @media screen and (max-width: 480px) {
-  nav.open .menu-wrap {
+  body nav {
+    height: 50px;
+  }
+  body nav .menu-wrap ul li {
+    font-size: 22px;
+    margin-right: 0;
+  }
+  body nav .navToggle {
+    transform: scale(0.8);
+    right: 10px;
+    top: 0;
+  }
+  body nav .menu-text {
+    right: 65px;
+    top: 20px;
+  }
+  body nav.white {
+    background-color: #ffffff;
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  body nav.white .menu-text {
+    color: #000;
+  }
+  body nav.white .text-white {
+    color: #000 !important;
+  }
+  body nav.white .navToggle .icon {
+    background-color: #000000;
+  }
+  body nav.white .navToggle .icon::before, body nav.white .navToggle .icon::after {
+    background-color: #000000;
+  }
+  body nav.white .navToggle.open .icon {
+    background-color: transparent;
+  }
+  body nav.open .menu-wrap {
     z-index: 9;
   }
-  nav.open .openlogo {
+  body nav.open .openlogo {
     background-size: cover;
     background-position: inherit;
   }
 
-  .logo_1 {
-    top: 35%;
+  .logo {
+    z-index: 9999;
+    width: 90px;
+  }
+  .logo img {
+    width: 100%;
   }
 
-  .btn {
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    width: 220px;
+  .logo_1 {
+    top: 35%;
   }
 
   .social-wrap {
@@ -33,10 +70,21 @@
     display: none;
   }
 
+  .swiper-slide {
+    overflow: auto;
+  }
+  .swiper-slide:not(.header):not(.s1) {
+    padding-top: 50px;
+  }
+  .swiper-slide:not(.header):not(.s1) .s-title {
+    top: 65px;
+  }
   .swiper-slide .on-front-desc {
     width: 90%;
-    left: -160px;
+    left: -110px;
     top: 0;
+    min-width: 320px;
+    z-index: 9999;
   }
   .swiper-slide .on-front-desc.modal_content.desc_arrow_left:after {
     content: none;
@@ -45,14 +93,10 @@
     position: relative;
     left: 0;
   }
-  .swiper-slide .b-left,
-.swiper-slide .b-right {
-    height: 50%;
-  }
   .swiper-slide .p-content {
     margin: 25px 0 0;
-    height: 100%;
-    overflow-y: scroll;
+    height: auto;
+    margin-bottom: 100px;
   }
   .swiper-slide .p-content p {
     margin-top: 5px;
@@ -65,7 +109,7 @@
     line-height: 22px;
   }
   .swiper-slide .p-image {
-    padding: 55px 0;
+    padding: 55px 0 15px;
   }
   .swiper-slide .p-image .product_img {
     max-width: initial;
@@ -84,6 +128,12 @@
     top: 0;
     left: 180px;
   }
+  .swiper-slide:not(.header):not(.s1) .btn-next {
+    position: relative;
+    margin-left: -10px;
+    left: 50%;
+    margin: 15px 0;
+  }
   .swiper-slide.header {
     background-position: 70% 0;
     height: 100vh !important;
@@ -91,32 +141,154 @@
   .swiper-slide.header .btn-next {
     display: block;
   }
+  .swiper-slide.header .btn {
+    position: relative;
+  }
   .swiper-slide.header h1 {
     font-size: 34px;
     line-height: 44px;
     margin-bottom: 15px;
   }
+  .swiper-slide.header span {
+    margin-bottom: 5px;
+  }
+  .swiper-slide.header .p-content p.desc {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .swiper-slide.s1 .b-left img {
     height: 80%;
     margin: 65px auto auto;
+  }
+  .swiper-slide.s1 .btn-next {
+    display: none;
   }
   .swiper-slide.s1 h2 {
     font-size: 22px;
     line-height: 24px;
   }
+  .swiper-slide.s1 .b-left {
+    height: 50%;
+  }
   .swiper-slide.s6 .p-content {
     margin: 0;
+    width: auto;
+    max-width: inherit;
+    padding: 55px 15px 0;
+  }
+  .swiper-slide.s6 .p-content p {
+    padding-top: 15px;
+  }
+  .swiper-slide.s6 .p-content .btn {
+    margin-bottom: 0;
   }
   .swiper-slide.s6 .on-front {
     position: relative;
   }
   .swiper-slide.s6 .on-front.on-front-right {
     right: 0;
+    height: auto !important;
+    padding-bottom: 75px;
   }
   .swiper-slide.s6 .on-front.on-front-right .p-content {
     margin: 0;
+    padding-top: 15px;
+  }
+  .swiper-slide.s6 .on-front.on-front-left {
+    height: auto !important;
+  }
+  .swiper-slide.s6 .product_wrap .product_img {
+    max-height: 350px;
+  }
+  .swiper-slide.s6 .product_wrap .btn-wrap-container .btn-more-info-6 {
+    left: 125px;
+  }
+  .swiper-slide.s6 .product_wrap .btn-wrap-container .btn-add-cart-6 {
+    left: -130px;
+    top: 70px;
+  }
+  .swiper-slide.s7 .product_wrap .product_img {
+    max-width: initial;
+    max-height: 320px;
+  }
+  .swiper-slide.s7 .product_wrap .btn-wrap-container .btn-more-info-7 {
+    left: 125px;
+  }
+  .swiper-slide.s7 .product_wrap .btn-wrap-container .btn-add-cart-7 {
+    left: -130px;
+    top: 70px;
   }
   .swiper-slide.footer .b-right {
     height: 280px;
+  }
+  .swiper-slide.footer .b-left {
+    padding: 0;
+  }
+  .swiper-slide.footer .b-left .p-content {
+    margin-left: 30px;
+  }
+  .swiper-slide.footer .container-fluid.h-100 {
+    padding: 0;
+  }
+  .swiper-slide.footer .row.h-100 {
+    height: auto !important;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .swiper-slide .b-left .p-content {
+    margin: 0;
+  }
+  .swiper-slide .p-image .product_img {
+    max-height: 220px;
+  }
+  .swiper-slide .p-image .product_wrap {
+    min-height: 200px;
+    background-size: 55%;
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-more-info {
+    left: 135px;
+    transform: scale(0.8);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-add-cart {
+    left: -95px;
+    transform: scale(0.6);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-more-info-6 {
+    left: 135px;
+    top: 15%;
+    transform: scale(0.8);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-add-cart-6 {
+    left: -95px;
+    top: 25%;
+    transform: scale(0.6);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-more-info-6 {
+    left: 135px;
+    top: 15%;
+    transform: scale(0.8);
+  }
+  .swiper-slide .p-image .product_wrap .btn-wrap-container .btn-add-cart-6 {
+    left: -95px;
+    top: 25%;
+    transform: scale(0.6);
+  }
+  .swiper-slide.header h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .swiper-slide.header .logo_2 {
+    width: 35px;
+    top: 0;
+  }
+  .swiper-slide.s1 .s-title {
+    top: 60px;
+  }
+  .swiper-slide.s1 .b-left {
+    margin-top: 35px;
+  }
+  .swiper-slide.footer .p-content {
+    margin-top: 35px;
   }
 }
