@@ -92,4 +92,4 @@ swiper.on('slideChange', function () {
     }
 });
 
-$('#sw').html($(window).width());
+$('#sw').html($(window).width() + 'x' + $(window).height());

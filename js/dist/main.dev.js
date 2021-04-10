@@ -84,4 +84,4 @@ swiper.on('slideChange', function () {
     $('nav').removeClass('white');
   }
 });
-$('#sw').html($(window).width());
+$('#sw').html($(window).width() + 'x' + $(window).height());
