@@ -234,7 +234,7 @@
 }
 
 @media screen and (max-width: 360px) {
-  .swiper-slide .b-left .p-content {
+  .swiper-slide .p-content {
     margin: 0 0 150px;
   }
   .swiper-slide:not(.header):not(.s1) .btn-next {
