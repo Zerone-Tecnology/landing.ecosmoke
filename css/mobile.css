@@ -235,7 +235,10 @@
 
 @media screen and (max-width: 360px) {
   .swiper-slide .b-left .p-content {
-    margin: 0;
+    margin: 0 0 100px;
+  }
+  .swiper-slide:not(.header):not(.s1) .btn-next {
+    bottom: 20%;
   }
   .swiper-slide .p-image .product_img {
     max-height: 220px;
