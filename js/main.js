@@ -90,4 +90,6 @@ swiper.on('slideChange', function () {
     } else {
         $('nav').removeClass('white');
     }
-  });
+});
+
+$('#sw').html($(window).width());
