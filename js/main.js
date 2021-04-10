@@ -84,7 +84,6 @@ swiper.slides.on('touchmove', function (e) {
 }, true);
 
 swiper.on('slideChange', function () {
-    console.log(swiper.activeIndex);
     if(swiper.activeIndex != 0 && swiper.activeIndex != 1){
         $('nav').addClass('white');
     } else {
