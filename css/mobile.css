@@ -90,9 +90,8 @@
     left: 0;
   }
   .swiper-slide .p-content {
-    margin: 25px 0 0;
+    margin: 25px 0 150px;
     height: auto;
-    margin-bottom: 100px;
   }
   .swiper-slide .p-content p {
     margin-top: 5px;
@@ -129,7 +128,7 @@
     margin-left: -10px;
     left: 50%;
     margin: 15px 0;
-    bottom: 12%;
+    bottom: 120px;
   }
   .swiper-slide.header {
     background-position: 70% 0;
@@ -188,7 +187,7 @@
     padding-bottom: 75px;
   }
   .swiper-slide.s6 .on-front.on-front-right .p-content {
-    margin: 0;
+    margin: 0 0 50px;
     padding-top: 15px;
   }
   .swiper-slide.s6 .on-front.on-front-left {
